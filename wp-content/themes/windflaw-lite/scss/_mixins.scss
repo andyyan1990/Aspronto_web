@@ -1,0 +1,111 @@
+@mixin fontsize($size-px, $content:null) {
+  font: {
+    size: $size-px * 1px $content;
+    size: $size-px/16 * 1rem $content;
+  }
+}
+
+@mixin transform($transform) {
+    -webkit-transform: $transform;
+    -ms-transform: $transform;
+    transform: $transform;
+}
+
+@mixin translate($x, $y) {
+    @include transform(translate($x, $y));
+}
+
+@mixin translateY($y) {
+    @include transform(translateY($y));
+}
+
+@mixin rotate($deg) {
+    @include transform(rotate($deg));
+}
+
+@mixin centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    @include translate(-50%, -50%);
+}
+
+@mixin centered-vertical {
+    position: absolute;
+    top: 50%;
+    @include translateY(-50%);
+}
+
+@mixin input-placeholder {
+    color: currentColor;
+    opacity: 0.5;
+}
+
+%clearfix {
+    &:after {
+        position: relative;
+        display: block;
+        content: "";
+        clear: both;
+    }
+}
+
+@mixin flexbox {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+}
+
+@mixin flex($direction) {
+    @include flexbox;
+    -webkit-flex-flow: $direction wrap;
+    -ms-flex-flow: $direction wrap;
+    flex-flow: $direction wrap;
+    -webkit-align-items: flex-start;
+    align-items: flex-start;
+}
+
+@mixin flex-center {
+    -webkit-justify-content: center;
+    justify-content: center;
+}
+
+@mixin fontAwesome {
+    display: inline-block;
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    line-height: inherit;
+}
+
+@mixin screen($break) {
+    @if $break == handheld-m {
+        @media screen and (min-width: 641px) {
+            @content;
+        }
+    }
+    @else if $break == handheld-l {
+        @media screen and (min-width: 769px) {
+            @content;
+        }
+    }
+    @else if $break == desktop {
+        @media screen and (min-width: 1025px) {
+            @content;
+        }
+    }
+    @else if $break == desktop-l {
+        @media screen and (min-width: 1500px) {
+            @content;
+        }
+    }
+    @else {
+        @media screen and ($break) {
+            @content;
+        }
+    }
+}

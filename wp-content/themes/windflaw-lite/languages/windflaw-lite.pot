@@ -1,0 +1,335 @@
+# Copyright (C) 2018 Loft.Ocean
+# This file is distributed under the GNU General Public License v2 or later.
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Windflaw Lite 1.1.1\n"
+"Report-Msgid-Bugs-To: http://wordpress.org/support/theme/windflaw-lite\n"
+"POT-Creation-Date: 2018-02-28 10:14+0800\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"PO-Revision-Date: 2018-MO-DA HO:MI+ZONE\n"
+"Last-Translator: Suihai <cain@loftocean.com>\n"
+"Language-Team: Loft Ocean <cain@loftocean.com>\n"
+"X-Generator: Poedit 1.8.12\n"
+
+#: 404.php:8 inc/class-post-list.php:34
+msgid "Sorry, but nothing found."
+msgstr ""
+
+#: comments.php:24
+msgctxt "comments title"
+msgid "%1$s comment on &ldquo;%2$s&rdquo;"
+msgid_plural "%1$s comments on &ldquo;%2$s&rdquo;"
+msgstr[0] ""
+msgstr[1] ""
+
+#: functions.php:90
+msgid "Primary Menu"
+msgstr ""
+
+#: functions.php:91
+msgid "Social Menu"
+msgstr ""
+
+#: functions.php:113
+msgid "Footer Widget Area "
+msgstr ""
+
+#: functions.php:115
+msgid "Add widgets here to appear in your footer main sidebar."
+msgstr ""
+
+#: header.php:15
+msgid "Skip to content"
+msgstr ""
+
+#: image.php:9
+msgid "Full Size"
+msgstr ""
+
+#: inc/back-compat.php:27 inc/back-compat.php:37 inc/back-compat.php:50
+msgid "Windflaw requires at least WordPress version 4.3. You are running version %s. Please upgrade and try again."
+msgstr ""
+
+#: inc/class-front.php:50
+msgid "expand child menu"
+msgstr ""
+
+#: inc/class-front.php:51
+msgid "collapse child menu"
+msgstr ""
+
+#: inc/class-front.php:112
+msgid "Menu"
+msgstr ""
+
+#: inc/class-front.php:153
+msgid "Windflaw designed by %sLoft.Ocean.%s"
+msgstr ""
+
+#: inc/class-front.php:153
+msgid "WordPress Themes by Loft.Ocean"
+msgstr ""
+
+#: inc/class-front.php:169 template-parts/content-single-post.php:49
+msgid "Author"
+msgstr ""
+
+#: inc/class-front.php:182
+msgid "Search Result"
+msgstr ""
+
+#: inc/class-front.php:183
+msgid "%s Result for: "
+msgid_plural "%s Results for: "
+msgstr[0] ""
+msgstr[1] ""
+
+#: inc/class-front.php:186
+msgid "Yearly Archive"
+msgstr ""
+
+#: inc/class-front.php:187
+msgid "Monthly Archive"
+msgstr ""
+
+#: inc/class-front.php:187
+msgid "Daily Archive"
+msgstr ""
+
+#: inc/class-front.php:190 inc/class-front.php:201
+msgid "%s Entry in: "
+msgid_plural "%s Entries in: "
+msgstr[0] ""
+msgstr[1] ""
+
+#: inc/class-front.php:191
+msgctxt "yearly archives date format"
+msgid "Y"
+msgstr ""
+
+#: inc/class-front.php:192
+msgctxt "monthly archives date format"
+msgid "F Y"
+msgstr ""
+
+#: inc/class-front.php:192
+msgctxt "daily archives date format"
+msgid "F j, Y"
+msgstr ""
+
+#: inc/class-front.php:197
+msgid "Category"
+msgstr ""
+
+#: inc/class-front.php:198
+msgid "Tag Archive"
+msgstr ""
+
+#: inc/class-front.php:198
+msgid "Archive"
+msgstr ""
+
+#: inc/class-front.php:216 template-parts/content-page.php:8
+#: template-parts/content-single-post.php:22
+#: template-parts/content-single.php:9 template-parts/content.php:8
+msgid "Pages:"
+msgstr ""
+
+#: inc/class-front.php:228
+msgid "Read More"
+msgstr ""
+
+#: inc/class-front.php:260
+msgid "no comment"
+msgstr ""
+
+#: inc/class-front.php:260
+msgid "%d comment"
+msgid_plural "%d comments"
+msgstr[0] ""
+msgstr[1] ""
+
+#: inc/class-meta-box.php:95
+msgid "Post Format Content"
+msgstr ""
+
+#: inc/class-meta-box.php:97
+msgid "Choose Audio"
+msgstr ""
+
+#: inc/class-meta-box.php:99 inc/class-meta-box.php:107
+msgid "Or type manually:"
+msgstr ""
+
+#: inc/class-meta-box.php:105
+msgid "Choose Video"
+msgstr ""
+
+#: inc/class-meta-box.php:112
+msgid "Note: If use self hosted video, the video type must be supported by html5 video."
+msgstr ""
+
+#: inc/class-post-list.php:62
+msgid "Featured"
+msgstr ""
+
+#: inc/customizer/class-customize-manager.php:37
+msgid "Header"
+msgstr ""
+
+#: inc/customizer/class-customize-manager.php:38
+msgid "Background"
+msgstr ""
+
+#: inc/customizer/class-customize-manager.php:87
+msgid "Upload your logo image"
+msgstr ""
+
+#: inc/customizer/class-customize-manager.php:90
+msgid "Display Site Tagline"
+msgstr ""
+
+#: inc/customizer/configs/colors-config.php:21
+msgid "Colors"
+msgstr ""
+
+#: inc/customizer/configs/colors-config.php:38
+msgid "Basic color scheme of the site"
+msgstr ""
+
+#: inc/customizer/configs/colors-config.php:40
+#: inc/customizer/configs/core-config.php:48
+msgid "Light"
+msgstr ""
+
+#: inc/customizer/configs/colors-config.php:41
+#: inc/customizer/configs/core-config.php:49
+msgid "Dark"
+msgstr ""
+
+#: inc/customizer/configs/colors-config.php:49
+msgid "Primary color"
+msgstr ""
+
+#: inc/customizer/configs/colors-config.php:56
+msgid "Basic text color - Light"
+msgstr ""
+
+#: inc/customizer/configs/colors-config.php:63
+msgid "Title text color - Light"
+msgstr ""
+
+#: inc/customizer/configs/colors-config.php:70
+msgid "Background color - Light"
+msgstr ""
+
+#: inc/customizer/configs/colors-config.php:77
+msgid "Basic text color - Dark"
+msgstr ""
+
+#: inc/customizer/configs/colors-config.php:84
+msgid "Title text color - Dark"
+msgstr ""
+
+#: inc/customizer/configs/colors-config.php:91
+msgid "Background color - Dark"
+msgstr ""
+
+#: inc/customizer/configs/core-config.php:36
+msgid "Site logo width"
+msgstr ""
+
+#: inc/customizer/configs/core-config.php:46
+msgid "Site header color scheme"
+msgstr ""
+
+#: inc/customizer/configs/core-config.php:85
+msgid "Background Size"
+msgstr ""
+
+#: inc/customizer/configs/core-config.php:89
+msgid "Auto"
+msgstr ""
+
+#: inc/customizer/configs/core-config.php:90
+msgid "Cover"
+msgstr ""
+
+#: inc/customizer/configs/typography-config.php:21
+msgid "Typography"
+msgstr ""
+
+#: inc/customizer/configs/typography-config.php:39
+msgid "Headings - Google Font"
+msgstr ""
+
+#: inc/customizer/configs/typography-config.php:48
+msgid "Headings - web safe font"
+msgstr ""
+
+#: inc/customizer/configs/typography-config.php:57
+msgid "Body Text - Google Font"
+msgstr ""
+
+#: inc/customizer/configs/typography-config.php:66
+msgid "Body Text - web safe font"
+msgstr ""
+
+#: inc/customizer/configs/typography-config.php:75
+msgid "Site Title - Google Font"
+msgstr ""
+
+#: inc/customizer/configs/typography-config.php:84
+msgid "Site Title - web safe font"
+msgstr ""
+
+#: searchform.php:5
+msgid "Search..."
+msgstr ""
+
+#: searchform.php:7
+msgid "Search"
+msgstr ""
+
+#: template-parts/content-single-post.php:33
+msgid "Next"
+msgstr ""
+
+#: template-parts/content-single-post.php:34
+msgid "Next post:"
+msgstr ""
+
+#: template-parts/content-single-post.php:36
+msgid "Previous"
+msgstr ""
+
+#: template-parts/content-single-post.php:37
+msgid "Previous post:"
+msgstr ""
+
+#. Theme Name of the plugin/theme
+msgid "Windflaw Lite"
+msgstr ""
+
+#. Theme URI of the plugin/theme
+msgid "http://demo.loftocean.com/windflaw-lite"
+msgstr ""
+
+#. Description of the plugin/theme
+msgid "Windflaw Lite is a neat and beautiful blog theme. With many customize options it is very easy to personalise your website. Start to create your beautiful website with Windflaw Lite!"
+msgstr ""
+
+#. Author of the plugin/theme
+msgid "Loft.Ocean"
+msgstr ""
+
+#. Author URI of the plugin/theme
+msgid "http://www.loftocean.com"
+msgstr ""
+
+#. Template Name of the plugin/theme
+msgid "Blank */"
+msgstr ""

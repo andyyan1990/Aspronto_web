@@ -1,0 +1,217 @@
+.site .skip-link {
+	left: auto;
+    right: -9999em;
+}
+
+ul,
+ol {
+    margin: 0 1.5em 1.5em 0;
+}
+
+blockquote {
+    padding: 0.375em 1.5em 0.375em 0;
+    border-right: 5px solid #58B88D;
+    border-left: none;
+}
+
+.site-header .menu-toggle {
+    right: auto;
+    left: 20px;
+}
+
+.site-header .menu-toggle.toggled-on:before {
+    -webkit-transform: translate(-50%, -50%) rotate(45deg);
+    -ms-transform: translate(-50%, -50%) rotate(45deg);
+    transform: translate(-50%, -50%) rotate(45deg);
+}
+
+.site-header .menu-toggle.toggled-on:after {
+    -webkit-transform: translate(-50%, -50%) rotate(135deg);
+    -ms-transform: translate(-50%, -50%) rotate(135deg);
+    transform: translate(-50%, -50%) rotate(135deg);
+}
+
+.site-header .nav ul.sub-menu {
+    margin-right: 1em;
+    margin-left: 0;
+}
+
+.site-header .nav ul li.menu-item-has-children > a {
+    margin-right: 0;
+    margin-left: 60px;
+}
+
+.site-header .nav ul li.menu-item-has-children > button.dropdown-toggle,
+.site-header .nav ul li li.menu-item-has-children > button.dropdown-toggle {
+    right: auto;
+    left: 0;
+}
+
+.site-header .nav ul li.menu-item-has-children > button.dropdown-toggle.toggled-on {
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+.align-default {
+    text-align: right;
+}
+
+.align-reverse {
+    text-align: left;
+}
+
+.content-layout-default .entry {
+    text-align: right;
+}
+
+.blog .post-excerpt,
+.archive .post-excerpt {
+    text-align: right;
+}
+
+.post-excerpt .page-links > * {
+    float: right;
+    margin-left: 6px;
+    margin-right: 0;
+}
+
+.sticky-post:before {
+    right: auto;
+    left: -25px;
+    -webkit-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+}
+
+.pagination a.page-numbers.next .fa-angle-right:before {
+    content: "\f104";
+}
+
+.pagination a.page-numbers.prev .fa-angle-left:before {
+    content: "\f105";
+}
+
+.single-blog .page-links > .page-links-title {
+    float: right;
+    padding-right: 0;
+    padding-left: 5px;
+}
+
+.post-tag-cloud .tagcloud a {
+    margin: 0 0 6px 6px;
+}
+
+.comments ol.comment-list li.comment .comment-body {
+    padding-right: 50px;
+    padding-left: 0;
+}
+
+.comments ol.comment-list li .comment-author.vcard img {
+    right: 0;
+    left: auto;
+}
+
+.comments ol.comment-list ol.children {
+    margin: 1.5em 0.625em 0 0;
+}
+
+.comments ol.comment-list li a.comment-edit-link {
+    margin-right: 5px;
+	margin-left: 0;
+}
+
+.author-bio .author-info {
+    text-align: right;
+}
+
+form p {
+    text-align: right;
+}
+
+form.post-password-form label {
+    padding-right: 10px;
+    padding-left: 0;
+}
+
+form.post-password-form label input[type="password"] {
+    padding: 0 80px 0 0;
+}
+
+#site-footer .widget {
+    float: right;
+    text-align: right;
+}
+
+#site-footer .widget ul ul {
+    margin: 0.75em 2em 0 0;
+}
+
+#site-footer .widget.widget_search .search-wrapper input[type="text"] {
+    padding: 2px 10px 2px 66px;
+    text-align: right;
+}
+
+#site-footer .widget.widget_search .search-wrapper button.search {
+    right: auto;
+    left: 0;
+}
+
+#site-footer .widget.widget_calendar tfoot td#prev {
+    text-align: right;
+}
+
+#site-footer .widget.widget_calendar tfoot td#next {
+    text-align: left;
+}
+
+.to-top {
+    right: auto;
+    left: 10px;
+}
+
+div.wpcf7 img.ajax-loader {
+    float: left;
+}
+
+@media screen and (min-width: 641px) {
+    .single-blog .post-navigation .nav-links > * {
+        float: right;
+        text-align: right;
+    }
+    
+    .single-blog .post-navigation .nav-next {
+        float: left;
+        text-align: left;
+    }
+}
+
+@media screen and (min-width: 769px) {
+    .site-header .nav > ul > li {
+        float: right;
+    }
+    
+    .site-header .nav ul.sub-menu {
+        margin-right: 0;
+    }
+    
+    .site-header .nav ul li.menu-item-has-children > a {
+        margin-left: 0;
+    }
+    
+    .site-header .nav ul li.menu-item-has-children > a:after {
+        margin-right: 3px;
+        margin-left: 0;
+    }
+	
+    .site-header .nav ul.sub-menu li.menu-item-has-children > a:after {
+        margin-right: 6px;
+        margin-left: 0;
+        content: "\f104";
+    }
+    
+    .site-header .nav > ul > li > ul.sub-menu ul.sub-menu {
+        right: calc(100% + 1px);
+        left: auto;
+    }
+}

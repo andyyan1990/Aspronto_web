@@ -1,0 +1,147 @@
+/* ==========================================================================
+   Forms
+   ========================================================================== */
+
+::-webkit-input-placeholder {
+    @include input-placeholder;
+}
+
+:-moz-placeholder {
+    @include input-placeholder;
+}
+
+:-ms-input-placeholder {
+    @include input-placeholder;
+}
+
+form {
+    * {
+        outline: 0;
+    }
+    
+    ul {
+        position: relative;
+        margin: 0 auto;
+        list-style: none;
+        
+        > li > label {
+            display: block;
+            margin-bottom: 0;
+            @include fontsize(13);
+            line-height: 2;
+        }
+    }
+    
+    li fieldset {
+        padding: 0;
+        margin: 0;
+        border: none;
+    }
+    
+    p {
+        text-align: left;
+    }
+}
+
+input[type="text"],
+input[type="email"],
+input[type="url"],
+input[type="file"],
+input[type="password"],
+input[type="number"],
+input[type="date"],
+input[type="search"],
+input[type="tel"],
+textarea {
+    width: 100%;
+    height: 2.4616em;
+    padding: 0 10px;
+    border: none;
+    -webkit-appearance: none !important;
+    -webkit-border-radius: 0;
+    @include fontsize(13);
+	line-height: 2.4616em;
+    opacity: 0.5;
+	transition: all 0.3s;
+    
+    &:focus {
+        opacity: 1;
+        outline: none;
+    }
+}
+
+textarea {
+	padding: 5px 10px;
+    min-height: 125px;
+	resize: vertical;
+}
+
+input[type="submit"] {
+    display: inline-block;
+    width: auto;
+    padding: 10px 20px;
+    margin: 0 auto;
+    border: none;
+    border-radius: 2px;
+	@include fontsize(10);
+    line-height: 16px;
+    letter-spacing: 0.2em;
+    font-weight: bold;
+    text-transform: uppercase;
+	transition: all 0.3s;
+    
+    .no-touch form &:hover {
+        opacity: 0.7;
+    }
+}
+
+select {
+    height: 32px;
+    padding: 2px;
+    background-color: #FFF;
+    border: 1px solid #DDD;
+    box-shadow: inset 0 1px 2px rgba(#000, 0.07);
+    color: #333;
+    outline: 0;
+    line-height: 32px;
+    vertical-align: middle;
+    @include fontsize(10, !important);
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    -webkit-font-smoothing: subpixel-antialiased;
+}
+
+form.post-password-form {
+    p:first-child {
+        text-align: center;
+    }
+    
+    label,
+    input {
+        display: block;
+        max-width: 340px;
+    }
+    
+    label {
+        position: relative;
+        height: 40px;
+        padding-left: 10px;
+        margin-bottom: 10px;
+        @include fontsize(13);
+        line-height: 40px;
+        
+        input[type="password"] {
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 1;
+            height: 40px;
+            padding: 0 0 0 80px;
+            line-height: 40px;
+        }
+    }
+    
+    input[type="submit"] {
+        width: 100%;
+    }
+}

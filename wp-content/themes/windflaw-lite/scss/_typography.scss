@@ -1,0 +1,176 @@
+
+/* ==========================================================================
+   Typography
+   ========================================================================== */
+
+body,
+button,
+input,
+select,
+textarea,
+.ui-widget {
+    font-family: $content-font;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+blockquote p,
+.post-title {
+    font-family: $title-font;
+}
+
+body {
+    color: $base-color;
+    @include fontsize($font-base-size/1px);
+    font-weight: 400;
+    line-height: 1.7;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: normal;
+    line-height: 1.5;
+}
+
+p {
+    margin: 0 auto $spacing-base;
+	@include fontsize(16);
+}
+
+li {
+    @include fontsize(14);
+    line-height: 1.5;
+}
+
+blockquote {
+    margin: 0 auto $spacing-base;
+    padding: 0.375em 0 0.375em $spacing-base;
+    border: none;
+    border-left: 5px solid #58B88D;
+    
+    p {
+      margin: 0 auto;
+      color: inherit !important;
+      @include fontsize(20);
+      font: {
+        weight: 600;
+        style: italic;
+      }
+    }
+    
+    cite,
+    small {
+      display: block;
+      margin-top: 0.5em;
+      font: {
+        size: 80%;
+        weight: 400;
+        style: normal;
+      }
+      line-height: 1.5;
+      text-transform: capitalize;
+    }
+}
+
+#main table {
+    margin: 0 0 $spacing-base;
+    width: 100%;
+    max-width: 100%;
+    border: {
+      collapse: collapse;
+      spacing: 0;
+      top: 1px solid;
+    }
+    
+    th,
+    td {
+      padding: 1em;
+      border: none;
+      border-bottom: 1px solid currentColor;
+      vertical-align: top;
+      line-height: 1.5;
+    }
+    
+    th {
+      @include fontsize(10);
+      font-weight: bold;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+    }
+    
+    td {
+      @include fontsize(13);
+    }
+    
+    caption {
+      margin: $spacing-base/2 auto;
+      @include fontsize(12);
+  }
+}
+
+pre {
+    display: block;
+    padding: 1.875em;
+    margin: $spacing-base 0;
+    box-shadow: inset 0 0 1px rgba(#000, 0.3);
+    tab-size: 4;
+	overflow: auto;
+}
+
+code {
+    padding: 0.375em;
+    box-shadow: inset 0 0 1px rgba(#000, 0.3);
+}
+
+fieldset {
+    padding: 0;
+    margin: 0;
+    border: none;
+}
+
+dfn,
+cite,
+em,
+i {
+	font-style: italic;
+}
+
+address {
+	margin: 0 0 $spacing-base;
+	font-style: italic;
+}
+
+code,
+kbd,
+tt,
+var,
+samp,
+pre {
+	font-family: monospace;
+}
+
+abbr,
+acronym {
+    border-bottom: 1px dotted;
+	cursor: help;
+}
+
+mark,
+ins {
+	padding: 0.125em 0.25em;
+	background: $primary-color;
+	color: #FFF;
+	text-decoration: none;
+}
+
+big {
+	font-size: 125%;
+}

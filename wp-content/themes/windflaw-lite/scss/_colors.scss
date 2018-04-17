@@ -1,0 +1,254 @@
+/* ==========================================================================
+   Colors
+   ========================================================================== */
+
+.site-header {
+    .dark-header & {
+        color: #FFF;
+        
+        &,
+        &:before,
+        .nav > ul {
+            background-color: #313740;
+        }
+        
+        .nav ul li {
+            border-top-color: rgba(#FFF, 0.07);
+        }
+    }
+    
+    .light-header & {
+        color: #222;
+        
+        &,
+        &:before,
+        .nav > ul {
+            background-color: #FFF;
+        }
+        
+        .nav ul li {
+            border-top-color: rgba(#000, 0.1);
+        }
+    }
+}
+
+.dark-color-scheme,
+.dark-page-header,
+body.custom-background #main.dark-color-scheme:before {
+    background-color: $bgcolor-dark;
+}
+
+.light-color-scheme,
+.light-page-header,
+body.custom-background #main.light-color-scheme:before {
+    background-color: $bgcolor-light;
+}
+
+body.custom-background #main .page-header:not(.fancy-page-header) {
+	background-color: transparent;
+}
+
+.dark-color-scheme .entry pre,
+.single-post #main.dark-color-scheme .comment-content pre,
+.dark-color-scheme code {
+    background: $bgcolor-darker;
+}
+
+.light-color-scheme .entry pre,
+.single-post #main.light-color-scheme .comment-content pre,
+.light-color-scheme code {
+    background: #FFF;
+}
+
+.dark-color-scheme,
+.dark-page-header {
+    color: $base-color-dark;
+}
+
+.light-color-scheme,
+.light-page-header {
+    color: $base-color;
+}
+
+.dark-color-scheme h1,
+.dark-color-scheme h2,
+.dark-color-scheme h3,
+.dark-color-scheme h4,
+.dark-color-scheme h5,
+.dark-color-scheme h6 {
+    color: $title-color-dark;
+}
+
+.light-color-scheme h1,
+.light-color-scheme h2,
+.light-color-scheme h3,
+.light-color-scheme h4,
+.light-color-scheme h5,
+.light-color-scheme h6 {
+    color: $title-color;
+}
+
+.blog #main,
+.archive #main {
+    &.dark-color-scheme {
+        .post {
+            background: $bgcolor-darkest;
+        }
+    }
+    
+    &.light-color-scheme {
+        .post {
+            background: #FFF;
+        }
+    }
+}
+
+.single-blog .dark-color-scheme .post + *,
+.single-blog .dark-color-scheme .post-navigation + .author-bio,
+body.page .dark-color-scheme .comments {
+    border-color: rgba(#FFF, 0.04);
+}
+
+.single-blog .light-color-scheme .post + *,
+.single-blog .light-color-scheme .post-navigation + .author-bio,
+body.page .light-color-scheme .comments {
+    border-color: rgba(#000, 0.04);
+}
+
+.single-blog .dark-color-scheme .author-bio,
+.single-blog .dark-color-scheme .comments,
+body.page .dark-color-scheme .comments {
+    background: rgba(#000, 0.1);
+}
+
+.single-blog .light-color-scheme .author-bio,
+.single-blog .light-color-scheme .comments,
+body.page .light-color-scheme .comments {
+    background: rgba(#000, 0.02);
+}
+
+.single-blog .dark-color-scheme .comments ol.comment-list li.comment,
+.single-blog .dark-color-scheme .comments ol.comment-list li.pingback,
+.single-blog .dark-color-scheme .comments .navigation,
+.single-blog .dark-color-scheme .post-navigation .nav-links,
+.search #main.dark-color-scheme article,
+body.page .dark-color-scheme .comments ol.comment-list li.comment,
+body.page .dark-color-scheme .comments ol.comment-list li.pingback,
+body.page .dark-color-scheme .comments .navigation {
+    border-color: rgba(#FFF, 0.04);
+}
+
+.single-blog .light-color-scheme .comments ol.comment-list li.comment,
+.single-blog .light-color-scheme .comments ol.comment-list li.pingback,
+.single-blog .light-color-scheme .comments .navigation,
+.single-blog .light-color-scheme .post-navigation .nav-links,
+.search #main.light-color-scheme article,
+body.page .light-color-scheme .comments ol.comment-list li.comment,
+body.page .light-color-scheme .comments ol.comment-list li.pingback,
+body.page .light-color-scheme .comments .navigation {
+    border-color: rgba(#000, 0.04);
+}
+
+input[type="submit"] {
+    .dark-color-scheme & {
+        background: #FFF;
+        color: $title-color;
+    }
+    
+    .light-color-scheme & {
+        background: $bgcolor-darker;
+        color: $title-color-dark;
+    }
+}
+
+.page-header.fancy-page-header {
+    &.dark-page-header {
+        .page-title {
+            text-shadow: 0 0 10px rgba(#000, 0.2);
+            color: #FFF;
+        }
+    }
+    
+    &.light-page-header {
+        .page-title {
+            text-shadow: 0 0 10px rgba(#FFF, 0.2);
+        }
+    }
+}
+
+input[type="text"],
+input[type="email"],
+input[type="url"],
+input[type="file"],
+input[type="password"],
+input[type="number"],
+input[type="date"],
+input[type="search"],
+input[type="tel"],
+textarea {
+    .dark-color-scheme & {
+        background: rgba(#FFF, 0.1);
+    }
+    
+    .light-color-scheme & {
+        background: rgba(#000, 0.1);
+    }
+}
+
+#site-footer {
+    &.dark-color-scheme {
+        background-color: $bgcolor-darker;
+        border-color: rgba(#FFF, 0.04);
+        
+        .site-info {
+            background: $bgcolor-darkest;
+        }
+        
+        .widget.widget_search .search-wrapper input[type="text"] {
+            background: rgba(#000, 0.15);
+            
+            &:focus {
+                background: rgba(#000, 0.3);
+            }
+        }
+    }
+    
+    &.light-color-scheme {
+        background-color: $bgcolor-lightest;
+        border-color: rgba(#000, 0.04);
+        
+        .site-info {
+            background: $bgcolor-lighter;
+        }
+        
+        .widget.widget_search .search-wrapper input[type="text"] {
+            background: rgba(#000, 0.05);
+            
+            &:focus {
+                background: rgba(#000, 0.1);
+            }
+        }
+    }
+}
+
+@include screen(handheld-l) {
+    .light-header .site-header .nav {
+        ul.sub-menu li {
+            background: #FFF;
+        }
+        
+        > ul > li > ul.sub-menu {
+            border-top-color: #111;
+        }
+    }
+    
+    .dark-header .site-header .nav {
+        ul.sub-menu li {
+            background: $bgcolor-darker;
+        }
+        
+        > ul > li > ul.sub-menu {
+            border-top-color: #FFF;
+        }
+    }
+}

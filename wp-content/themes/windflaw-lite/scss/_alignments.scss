@@ -1,0 +1,41 @@
+/* ==========================================================================
+   Alignments
+   ========================================================================== */
+
+.alignleft {
+	float: left;
+	display: inline;
+}
+
+.alignright {
+	float: right;
+	display: inline;
+}
+
+.aligncenter {
+	display: block;
+	margin-right: auto !important;
+	margin-left: auto !important;
+}
+
+.align-default {
+    text-align: left;
+}
+
+.align-reverse {
+    text-align: right;
+}
+
+.align-center {
+    text-align: center;
+}
+
+.entry > figure.alignleft,
+#page img.alignleft {
+    margin: 0 $spacing-base $spacing-base 0;
+}
+
+.entry > figure.alignright,
+#page img.alignright {
+    margin: 0 0 $spacing-base $spacing-base;
+}

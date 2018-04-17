@@ -1,0 +1,99 @@
+***********************
+*  UPCOMING FEATURES  *
+***********************
+
+ * 3.x - Services availability (as analytics tab)
+ * 3.x - Wind state
+ * 3.x - Stations map
+ * 3.x - Sun (meridian) transit time
+ * 3.x - Querying icons texts via shortcodes
+ * 3.x - Forest fire weather index computing
+ * 3.x - Aridity index computing
+ * 3.x - Pushing data to twitter / slack / fb / ...
+ * 3.x - Number formating
+ * 3.x - Historical data import
+ * 3.x - Astronomical seasons for period control
+ * 4.x - Agricultural indexes (EMC for grains)
+ * 4.x - 4 hours forecasting
+ * 4.x - 5 days forecasting
+ * 4.x - Buttons and config windows in TinyMCE
+ * 5.x - Pushing data to MQTT broker
+ * 5.x - Textual historical shortcodes
+
+
+
+***********************
+*  UPCOMING CONTROLS  *
+***********************
+
+ * 3.x - Simple Weather Widget
+ * 4.x - Soil widget
+ * 4.x - UV widget
+ * 4.x - Icons dashboard
+ * 4.x - Pollution widget
+ * 5.x - Marine widget
+ * 5.x - Aero widget
+ * 5.x - Snow widget
+
+
+
+***********************
+* FUTURE IMPROVEMENTS *
+***********************
+
+ * 3.x - Ability to change text color in clean gauges
+
+
+
+***********************
+* DATA I/O            *
+***********************
+
+ * 3.x - Clientraw as export
+ * 3.x - Realtime as export
+ * 3.x - all-sensors.xml as import
+ * 3.x - weatherlink as import
+ * 3.x - private WeatherFlow
+ * 4.x - Metar / TAF / NOAA
+
+
+
+***********************
+* IMPROVEMENTS TO DO  *
+***********************
+
+
+
+***********************
+* BUGS TO FIX         *
+***********************
+
+Fully delete a station in fast collect mode
+
+
+
+***********************
+* DOCUMENTATION       *
+***********************
+
+Data Visualization tool.
+
+All modules: solar, thunderstorm, soil
+
+Psychrometry
+
+History collection
+
+
+
+***********************
+* 3.5.0               *
+***********************
+
+$timeconsistent for all yearly graphs + verify sareas . daily ?
+
+* New: new single and multi stackable bars chart for historical graph (month, meteorological season and year) with tons of options and settings.
+* New: new stackable areas chart for historical graph (month, meteorological season and year) with tons of options and settings.
+* New: new angular stream chart for daily graph with tons of options and settings.
+* New: new angular stream chart for historical graph (month, meteorological season and year) with tons of options and settings.
+* Improvement: new value scale for time consistent boundaries in all historical graphs (thanks to Ralf Karpa for the suggestion).

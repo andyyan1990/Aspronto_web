@@ -1,0 +1,183 @@
+
+/* ==========================================================================
+   Elements
+   ========================================================================== */
+
+* {
+	margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+	word-wrap: break-word;
+    
+    &:focus {
+        outline: 1px dotted;
+    }
+}
+
+html {
+    width: 100%;
+    height: 100%;
+    min-height: 100%;
+    
+    &:not(.no-touch) div {
+        background-attachment: scroll !important;
+    }
+}
+
+body {
+    width: 100%;
+    height: auto;
+    min-height: 100%;
+    margin: 0 auto;
+    
+    &.custom-background #main {
+        position: relative;
+        background-size: cover;
+        overflow: hidden;
+        
+        &:before {
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 0;
+            display: block;
+            width: 100%;
+            height: 110%;
+            content: "";
+            opacity: 0.8;
+        }
+        
+        > * {
+            position: relative;
+            z-index: 2;
+        }
+    }
+    
+    &#tinymce {
+        padding: 20px !important;
+    }
+}
+
+#page {
+    position: relative;
+    width: 100%;
+    height: auto;
+}
+
+ul,
+ol {
+    margin: 0 0 $spacing-base $spacing-base;
+    padding: 0;
+}
+
+li {
+    > ul,
+    > ol {
+        margin-bottom: 0;
+    }
+    
+    .content-layout-default .entry & {
+        margin-bottom: 0.375em;
+    }
+}
+
+dl {
+	margin: 0 0 $spacing-base;
+}
+
+dt {
+	font-weight: 700;
+}
+
+dd {
+	margin: 0 0 $spacing-base;
+}
+
+figure {
+    position: relative;
+    overflow: hidden;
+    max-width: 100%;
+    margin: 0;
+    
+    img {
+        display: block;
+    }
+    
+    .entry > & {
+        margin: $spacing-base 0;
+    }
+}
+
+img {
+	height: auto;
+    max-width: 100%;
+    border: 0;    
+}
+
+hr {
+    height: 1px;
+    background-color: #CCC;
+    border: none;
+    
+    div:not(.separator) & {
+        margin: 2.25em 0;
+    }
+}
+
+.hide {
+    display: none !important;
+}
+
+/**
+ * Clearing
+ */
+form ul,
+.container,
+.entry {
+    @extend %clearfix;
+}
+
+/**
+ * Accessibility
+ */
+.says,
+.screen-reader-text {
+	position: absolute !important;
+	clip: rect(1px, 1px, 1px, 1px);
+	height: 1px;
+	width: 1px;
+	overflow: hidden;
+	/* many screen reader and browser combinations announce broken words as they would appear visually */
+	word-wrap: normal !important;
+}
+
+.site .skip-link {
+	top: -9999em;
+	left: -9999em;
+	display: block;
+	padding: 15px 23px 14px;
+	background-color: #F1F1F1;
+	box-shadow: 0 0 1px 1px rgba(#000, 0.2);
+	color: #21759B;
+	font-family: Montserrat, "Helvetica Neue", sans-serif;
+	font-size: 14px;
+	font-weight: 700;
+	outline: none;
+	text-decoration: none;
+	text-transform: none;
+    
+    .logged-in & {
+        box-shadow: 0 0 2px 2px rgba(#000, 0.2);
+        font-family: "Open Sans", sans-serif;
+    }
+    
+    &:focus {
+        top: 7px;
+        left: 6px;
+        z-index: 100000;
+        width: auto;
+        height: auto;
+        clip: auto;
+    }
+}

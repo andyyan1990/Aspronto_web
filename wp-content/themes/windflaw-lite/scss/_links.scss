@@ -1,0 +1,35 @@
+/* ==========================================================================
+   Links
+   ========================================================================== */
+
+a {
+    text-decoration: none;
+    transition: all 0.3s;
+    color: $primary-color;
+    
+    .content-layout-default .entry &,
+    .author-bio .author-info p &,
+    .comment-content & {
+        position: relative;
+        outline: none;
+        border-bottom: 1px solid;
+        transition: all 0.3s;
+        
+        .no-touch &:hover {
+            border-bottom-color: transparent;
+        }
+    }
+}
+
+.content-layout-default .entry {
+    figure > a,
+    a.wp-playlist-caption,
+    .mejs-container a {
+        border-bottom: none;
+    }
+    
+    a img {
+        position: relative;
+        z-index: 9;
+    }
+}

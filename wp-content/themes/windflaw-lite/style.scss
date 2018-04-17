@@ -1,0 +1,45 @@
+/*
+Theme Name: Windflaw Lite
+Theme URI: http://demo.loftocean.com/windflaw-lite
+Author: Loft.Ocean
+Author URI: http://www.loftocean.com
+Description: Windflaw Lite is a neat and beautiful blog theme. With many customize options it is very easy to personalise your website. Start to create your beautiful website with Windflaw Lite!
+Version: 1.1.1
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Tags: full-width-template, custom-background, custom-colors, custom-header, custom-menu, editor-style, featured-images, rtl-language-support, sticky-post, threaded-comments, translation-ready
+Text Domain: windflaw-lite
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+
+FontAwesome License: SIL Open Font License - http://scripts.sil.org/OFL
+Images License: GNU General Public License v2 or later
+*/
+
+
+@import 'scss/variables';
+
+@import 'scss/mixins';
+
+@import 'scss/normalize';
+
+@import 'scss/elements';
+
+@import 'scss/typography';
+
+@import 'scss/links';
+
+@import 'scss/menu';
+
+@import 'scss/alignments';
+
+@import 'scss/forms';
+
+@import 'scss/content';
+
+@import 'scss/widgets';
+
+@import 'scss/media';
+
+@import 'scss/colors';

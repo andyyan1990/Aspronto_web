@@ -1,0 +1,1 @@
+<?php echo Windflaw_Front::get_date_meta(); ?>

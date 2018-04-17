@@ -1,0 +1,195 @@
+/* ==========================================================================
+   Media
+   ========================================================================== */
+
+.site .avatar {
+	border-radius: 50%;
+}
+
+.entry,
+.comment-content,
+.textwidget {
+    .wp-smiley {
+        margin-top: 0;
+        margin-bottom: 0;
+        padding: 0;
+        border: none;
+    }
+	
+    a img {
+        display: block;
+    }
+}
+
+/* Make sure embeds and iframes fit their containers. */
+embed,
+iframe,
+object,
+video {
+	margin-bottom: $spacing-base;
+	max-width: 100%;
+	vertical-align: middle;
+    
+    p > & {
+        margin-bottom: 0;
+    }
+}
+
+.entry .wp-audio-shortcode a,
+.entry .wp-playlist a {
+	box-shadow: none;
+}
+
+.wp-audio-shortcode,
+.wp-video,
+.wp-playlist.wp-audio-playlist {
+	margin-top: 0;
+	margin-bottom: $spacing-base;
+}
+
+.wp-playlist.wp-audio-playlist {
+	padding-bottom: 0;
+}
+
+.wp-playlist .wp-playlist-tracks {
+	margin-top: 0;
+}
+
+/**
+ * Captions
+ */
+
+.wp-caption {
+    margin: $spacing-base 0;
+    max-width: 100%;
+    
+    &.aligncenter {
+        text-align: center;
+    }
+}
+    
+.wp-caption-text {
+    display: block;
+    @include fontsize(12);
+    padding: $spacing-base/2 0;
+    line-height: 1.5;
+}
+
+img[class*="wp-image-"] {
+    display: block;
+}
+
+/**
+ * Galleries
+ */
+
+.gallery {
+	margin: 0 -1.1666667% 1.5em;
+    
+    .gallery-item {
+        display: inline-block;
+        max-width: 33.33%;
+        padding: 0 1.1400652% 2.2801304%;
+        text-align: center;
+        vertical-align: top;
+        width: 100%;
+        
+        .gallery-icon {
+            font-size: 0;
+            
+            a {
+                transition: 0s;
+                
+                &:before {
+                    display: none;
+                }
+            }
+            
+            img {
+                margin: 0 auto;
+            }
+        }
+    }
+    
+    &.gallery-columns-1 {
+        .gallery-item {
+            max-width: 100%;
+        }
+    }
+    
+    &.gallery-columns-2 {
+        .gallery-item {
+            max-width: 50%;
+        }
+    }
+    
+    &.gallery-columns-4 {
+        .gallery-item {
+            max-width: 25%;
+        }
+    }
+    
+    &.gallery-columns-5 {
+        .gallery-item {
+            max-width: 20%;
+        }
+    }
+    
+    &.gallery-columns-6 {
+        .gallery-item {
+            max-width: 16.66%;
+        }
+    }
+    
+    &.gallery-columns-7 {
+        .gallery-item {
+            max-width: 14.28%;
+        }
+    }
+    
+    &.gallery-columns-8 {
+        .gallery-item {
+            max-width: 12.5%;
+        }
+    }
+    
+    &.gallery-columns-9 {
+        .gallery-item {
+            max-width: 11.11%;
+        }
+    }
+}
+
+.gallery-columns-6,
+.gallery-columns-7,
+.gallery-columns-8,
+.gallery-columns-9 {
+    .gallery-caption {
+        display: none;
+    }
+}
+
+#page .wp-playlist {
+    margin: 0 0 1.75em;
+    padding-bottom: 0;
+}
+
+.wp-playlist-item .wp-playlist-caption {
+	padding: 1em 0 0.5em;
+    max-width: 100%;
+    border-bottom: 0;
+    color: inherit !important;
+}
+
+.wp-playlist-item .wp-playlist-item-length {
+    top: 50%;
+    @include translateY(-50%);
+}
+
+.content-layout-default .entry .mejs-container a {
+	clear: none;
+    
+    &:before {
+        display: none;
+    }
+}

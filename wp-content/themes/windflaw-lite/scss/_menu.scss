@@ -1,0 +1,411 @@
+/* ==========================================================================
+   Menu
+   ========================================================================== */
+
+.site-header .nav {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    padding-top: 16px;
+    box-shadow: 0 4px 10px rgba(#000, 0.1);
+    
+    &.toggled-on ul {
+        display: block;
+    }
+    
+    ul {
+        display: none;
+        margin: 0;
+        list-style: none;
+        
+        li {
+            border-top: 1px solid;
+            @include fontsize(12);
+            font-weight: 400;
+            letter-spacing: 0.2em;
+            text-transform: uppercase;
+            
+            a {
+                display: block;
+                padding: 10px 0;
+                color: inherit;
+                line-height: 30px;
+                
+                .no-touch &:hover,
+                &:focus {
+                    color: $primary-color;
+                }
+            }
+            
+            &.current-menu-item > a {
+                font-weight: 600;
+            }
+            
+            &.menu-item-has-children {
+                position: relative;
+                
+                > a {
+                    margin-right: 60px;
+                }
+                
+                > button.dropdown-toggle {
+                    position: absolute;
+                    top: 0;
+                    right: 0;
+                    width: 40px;
+                    height: 50px;
+                    background: none;
+                    border: none;
+                    line-height: 50px;
+                    transition: 0.3s;
+                    
+                    .no-touch &:hover,
+                    &:focus {
+                        color: $primary-color;
+                        outline: 0;
+                    }
+                    
+                    &:before,
+                    &:after {
+                        @include centered;
+                        width: 12px;
+                        height: 2px;
+                        border-top: 1px solid;
+                        content: "";
+                        transition: transform 0.3s;
+                    }
+                    
+                    &:before {
+                        margin-top: 0.5px;
+                    }
+                    
+                    &:after {
+                        margin-left: -1px;
+                        @include transform(translate(-50%, -50%) rotate(90deg));
+                    }
+                    
+                    &.toggled-on {
+                        @include rotate(-45deg);
+                        
+                        + ul.sub-menu {
+                            display: block;
+                        }
+                    }
+                }
+            }
+            
+            li.menu-item-has-children > button.dropdown-toggle {
+                right: 0;
+            }
+        }
+        
+        &.sub-menu {
+            display: none;
+            margin-left: 1em;
+             
+            li {
+                letter-spacing: 0.1em;
+            }
+        }
+    }
+    
+    > ul {
+        padding: 0 1.5em;
+        
+        > li:first-child {
+            border-top: none;
+        }
+    }
+}
+
+.footer-social-navigation {
+    text-align: center;
+    
+    ul {
+        list-style: none;
+        margin: 30px 0;
+        
+        li {
+            display: inline-block;
+            margin: 10px;
+            
+            a {
+                display: block;
+                width: auto;
+                height: 30px;
+                padding: 5px;
+                text-align: center;
+                line-height: 20px;
+                
+                &:not(:hover) {
+                    color: inherit;
+                }
+                
+                &:before {
+                    @include fontAwesome;
+                    @include fontsize(14);
+                    content: "\f1e0"; /* Default share icon */
+                    margin-right: 10px;
+                }
+                
+                &[href*="twitter"]:before {
+                    content: "\f099";
+                }
+                
+                &[href*="facebook"]:before {
+                    content: "\f09a";
+                }
+                
+                &[href*="google"]:before {
+                    content: "\f0d5";
+                }
+                
+                &[href*="pinterest"]:before {
+                    content: "\f231";
+                }
+                
+                &[href*="instagram"]:before {
+                    content: "\f16d";
+                }
+                
+                &[href*="behance"]:before {
+                    content: "\f1b4";
+                }
+                
+                &[href*="vimeo"]:before {
+                    content: "\f27d";
+                }
+                
+                &[href*="youtube"]:before {
+                    content: "\f16a";
+                }
+                
+                &[href*="snapchat"]:before {
+                    content: "\f2ac";
+                }
+                
+                &[href*="medium"]:before {
+                    content: "\f23a";
+                }
+                
+                &[href*="linkedin"]:before {
+                    content: "\f0e1";
+                }
+                
+                &[href*="flickr"]:before {
+                    content: "\f16e";
+                }
+                
+                &[href*="etsy"]:before {
+                    content: "\f2d7";
+                }
+                
+                &[href*="dribbble"]:before {
+                    content: "\f17d";
+                }
+                
+                &[href*="tumblr"]:before {
+                    content: "\f173";
+                }
+                
+                &[href*="vine"]:before {
+                    content: "\f1ca";
+                }
+                
+                &[href*="bloglovin"]:before {
+                    content: "\f004";
+                }
+                
+                &[title="website"]:before {
+                    content: "\f0c1";
+                }
+                
+                &[href*="feed"]:before {
+                    content: "\f09e";
+                }
+                
+                &[href*="vk"]:before {
+                    content: "\f189";
+                }
+                
+                &[href*="del.icio"]:before {
+                    content: "\f1a5";
+                }
+                
+                &[href*="reddit"]:before {
+                    content: "\f281";
+                }
+                
+                &[href*="yelp"]:before {
+                    content: "\f1e9";
+                }
+                
+                &[href*="soundcloud"]:before {
+                    content: "\f1be";
+                }
+                
+                &[href*="500px"]:before {
+                    content: "\f26e";
+                }
+                
+                &[href*="digg"]:before {
+                    content: "\f1a6";
+                }
+                
+                &[href*="foursquare"]:before {
+                    content: "\f180";
+                }
+                
+                &[href*="houzz"]:before {
+                    content: "\f27c";
+                }
+                
+                &[href*="tripadvisor"]:before {
+                    content: "\f262";
+                }
+            }
+        }
+    }
+}
+
+@include screen(handheld-l) {
+    .site-header .nav {
+        position: relative;
+        width: auto;
+        box-shadow: none;
+        font-size: 0;
+        text-align: center;
+        
+        ul {
+            display: block;
+            
+            li {
+                border: none;
+                
+                &:hover {
+                    z-index: 199;
+                }
+                
+                &.menu-item-has-children > a {
+                    margin-right: 0;
+                    
+                    &:after {
+                        display: inline-block;
+                        margin-left: 3px;
+                        font: normal normal normal 14px/1 FontAwesome;
+                        font-size: inherit;
+                        text-rendering: auto;
+                        -webkit-font-smoothing: antialiased;
+                        -moz-osx-font-smoothing: grayscale;
+                        content: "\f107";
+                    }
+                }
+                
+                a {
+                    padding: 0;
+                    line-height: 1.5;
+                }
+            }
+            
+            &.sub-menu {
+                position: absolute;
+                z-index: -1;
+                display: block;
+                margin-left: 0;
+                box-shadow: 0 1px 8px rgba(#000, 0.15);
+                text-align: center !important;
+                transition: 0.5s;
+                opacity: 0;
+                pointer-events: none;
+                visibility: hidden;
+                
+                li {
+                    float: none;
+                    padding: 0;
+                    @include fontsize(10);
+                    text-align: center;
+                    
+                    &.menu-item-has-children > a:after {
+                        margin-left: 6px;
+                        content: "\f105";
+                    }
+                    
+                    a {
+                        display: block;
+                        padding: 12px 30px;
+                        white-space: nowrap;
+                        transition: all 0.15s;
+                    }
+                }
+            }
+        }
+        
+        > ul {
+            display: inline-block;
+            width: auto;
+            padding: 0;
+            background: transparent !important;
+            
+            &:after {
+                position: relative;
+                display: block;
+                content: "";
+                clear: both;
+            }
+            
+            > li {
+                position: relative;
+                float: left;
+                display: block;
+                padding: 0 15px;
+                background: none !important;
+                line-height: inherit;
+                
+                > a {
+                    position: relative;
+                    z-index: 100;
+                    display: block;
+                    white-space: nowrap;
+                    line-height: 70px;
+                }
+                
+                > ul.sub-menu {
+                    bottom: 0;
+                    left: 50%;
+                    @include translate(-50%, 100%);
+                    border-top: 3px solid;
+                    
+                    ul.sub-menu {
+                        top: 0;
+                        left: calc(100% + 1px);
+                    }
+                }
+                
+                &:hover > ul.sub-menu,
+                > ul.sub-menu li:hover ul.sub-menu,
+                &.focus > ul.sub-menu,
+                > ul.sub-menu li.focus ul.sub-menu {
+                    z-index: 99;
+                    opacity: 1;
+                    pointer-events: auto;
+                    visibility: visible;
+                }
+            }
+        }
+    }
+	
+	.site-header .dropdown-toggle {
+		display: none;
+	}
+}
+
+@media screen and (max-width: 640px) {
+    .footer-social-navigation ul li a {
+        font-size: 0;
+        
+        &:before {
+            margin-right: 0;
+        }
+    }
+}

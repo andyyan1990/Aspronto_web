@@ -1,0 +1,231 @@
+/* ==========================================================================
+   Widgets
+   ========================================================================== */
+
+#site-footer .widget {
+    position: relative;
+    float: left;
+    width: 100%;
+    margin-bottom: 2em;
+    @include fontsize(12);
+    text-align: left;
+    
+    @include screen(handheld-m) {
+        width: 50%;
+        padding: 0 2em;
+    }
+    
+    @include screen(handheld-l) {
+        width: 33.33%;
+    }
+    
+    @include screen(desktop) {
+        width: 25%;
+    }
+    
+    h5 {
+        margin: 0 0 1.125em;
+        font-weight: 600;
+        @include fontsize(13);
+        letter-spacing: 0.2em;
+        text-transform: uppercase;
+    }
+    
+    p {
+        margin-bottom: $spacing-base/2;
+        @include fontsize(12);
+        
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+    
+    ul {
+        margin: 0;
+        list-style: none;
+        
+        ul {
+            margin: $spacing-base/2 0 0 2em;
+            list-style: disc;
+        }
+        
+        li {
+            margin-bottom: 0.75em;
+            @include fontsize(12);
+        }
+    }
+    
+    a {
+        color: inherit;
+        opacity: 0.7;
+        
+        .no-touch &:hover {
+            color: $primary-color;
+            opacity: 1;
+        }
+    }
+    
+    &.widget_nav_menu ul li a,
+    &.widget_archive ul li a,
+    &.widget_pages ul li a,
+    &.widget_categories ul li a,
+    &.widget_meta ul li a,
+    &.widget_meta ul li a abbr {
+        @include fontsize(10);
+        letter-spacing: 0.2em;
+        text-transform: uppercase;
+    }
+    
+    &.widget_calendar {
+        #wp-calendar {
+            width: 100%;
+            margin: 0;
+            border-collapse: collapse;
+            border-spacing: 0;
+            text-align: center;
+        }
+        
+        caption {
+            padding-bottom: $spacing-base;
+            margin-bottom: 0.5em;
+            border-bottom: 2px solid;
+            font: {
+                family: $title-font;
+                weight: bold;
+            }
+            @include fontsize(11, !important);
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            line-height: 1;
+        }
+        
+        th {
+            padding: 10px 0;
+        }
+        
+        td {
+            position: relative;
+            padding: 5px 0;
+            border: 1px solid transparent;
+            vertical-align: middle;
+        }
+        
+        tbody tr:last-child td {
+            padding-bottom: 10px;
+        }
+        
+        tbody td a {
+            @include centered;
+            width: 20px;
+            height: 20px;
+            border-radius: 2px;
+            background: $primary-color;
+            color: #FFF;
+            line-height: 20px;
+            text-align: center;
+            opacity: 0.7;
+            
+            .no-touch &:hover {
+                color: #FFF;
+                opacity: 1;
+            }
+        }
+        
+        tfoot {
+            td {
+                padding-top: 10px;
+                border-top: 2px solid;
+                
+                &#prev {
+                    text-align: left;
+                }
+                
+                &#next {
+                    text-align: right;
+                }
+            }
+            
+            a {
+                font-weight: bold;
+            }
+        }
+    }
+    
+    &.widget_tag_cloud {
+        .tagcloud {
+            font-size: 0;
+            
+            a {
+                display: inline-block;
+                padding: 0.7em 1.2em;
+                margin: 0 0.15em 0.3em;
+                border-radius: 2px;
+                opacity: 0.7;
+                @include fontsize(10, !important);
+                text-transform: uppercase;
+                background: $primary-color;
+                color: #FFF;
+                
+                .no-touch &:hover {
+                    opacity: 1;
+                    color: #FFF;
+                }
+            }
+        }
+    }
+    
+    &.widget_search {
+        .search-wrapper {
+            position: relative;
+            
+            input[type="text"] {
+                z-index: 1;
+                width: 100%;
+                height: 46px;
+                padding: 2px 66px 2px 10px;
+                background: none;
+                border: none;
+                line-height: 42px;
+                text-align: left;
+                transition: 0.3s;
+            }
+            
+            button.search {
+                position: absolute;
+                top: 0;
+                right: 0;
+                z-index: 3;
+                width: 46px;
+                height: 46px;
+                padding: 0;
+                line-height: 46px;
+                background: transparent;
+                border: none;
+                -webkit-appearance: none;
+                transition: 0.3s;
+                
+                span {
+                    opacity: 0;
+                }
+                
+                &:after {
+                    position: absolute;
+                    top: 0;
+                    right: 0;
+                    z-index: 2;
+                    display: block;
+                    width: 46px;
+                    height: 46px;
+                    text-align: center;
+                    font: normal normal normal 14px/1 FontAwesome;
+                    line-height: 46px;
+                    content: "\f002";
+                }
+                
+                .no-touch &:hover {
+                    opacity: 0.7;
+                }
+            }
+        }
+    }
+}
